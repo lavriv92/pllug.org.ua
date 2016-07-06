@@ -3,7 +3,8 @@ var concat = require('gulp-concat');
 var clean = require('gulp-clean');
 var connect = require('gulp-connect');
 var stylus = require('gulp-stylus');
-var htmlmin = require('gulp-htmlmin');
+var jade = require('gulp-jade');
+
 
 
 gulp.task('stylesheets:stylus', function() {
@@ -17,13 +18,12 @@ gulp.task('stylesheets:stylus', function() {
         .pipe(connect.reload());
 });
 
-gulp.task('templates', function() {
-    return gulp.src(['./src/*.html'])
-        .pipe(htmlmin({
-            collapseWhitespace: true
-        }))
-        .pipe(gulp.dest('./dist'))
-        .pipe(connect.reload());
+gulp.task('templates', function () {
+  return gulp.src('./src/**/**.jade')
+    .pipe(jade({
+      // pretty: true
+    }))
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('clean', function() {
