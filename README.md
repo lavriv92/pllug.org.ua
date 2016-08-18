@@ -1,25 +1,24 @@
-## PLLUG site
-[![Gitter](https://badges.gitter.im/PLLUG/pllug.org.ua.svg)](https://gitter.im/PLLUG/pllug.org.ua?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+# README
 
-[![See project board https://img.shields.io/badge/Board-overv.io-lightgrey.svg](https://img.shields.io/badge/Board-overv.io-lightgrey.svg)](https://overv.io/PLLUG/pllug.org.ua/)
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
+Things you may want to cover:
 
-#### Runing ui theme locally
+* Ruby version
 
-- install nodejs from [Official site](https://nodejs.org/en/)
+* System dependencies
 
-- installing gulp and running service
+* Configuration
 
-```bash
+* Database creation
 
-npm install -g gulp
+* Database initialization
 
-cd ui-theme
+* How to run the test suite
 
-npm i
+* Services (job queues, cache servers, search engines, etc.)
 
-gulp
+* Deployment instructions
 
-```
-
-App will run on port [http://localhost:3000](http://localhost:3000)
+* ...
