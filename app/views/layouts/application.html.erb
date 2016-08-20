@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PllugOrgUa</title>
+    <title>Pllug | <%= @title %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <h1>Pllug site</h1>
+    </header>
+    <section>
+      <%= yield %>
+    </section>
+    <footer></footer>
   </body>
 </html>
