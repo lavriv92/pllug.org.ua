@@ -10,4 +10,8 @@ class PageController < ApplicationController
   def roadmap
     @title = "Roadmap"
   end
+
+  def team
+    @title = 'Team'
+  end
 end

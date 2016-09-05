@@ -3,18 +3,38 @@
   <head>
     <title>Pllug | <%= @title %></title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header>
-      <h1>Pllug site</h1>
-    </header>
-    <section>
-      <%= yield %>
+    <section class="container">
+      <header>
+        <h1><a href="/">PLLUG</a></h1>
+
+        <nav>
+          <li><%= link_to 'Команда', 'team' %></li>
+          <li><%= link_to 'Роадмап', 'roadmap' %></li>
+          <li><%= link_to 'Блог', 'blog' %></li>
+          <li><%= link_to 'Контакти', 'contact' %></li>
+        </nav>
+      </header>
+      <section class="content">
+        <%= yield %>
+      </section>
+      <footer>
+        <section class="footer-container">
+          <section class="footer-block">
+            <email>info@pllug.org.ua</email>
+          </section>
+          <section class="footer-block">
+            F
+          </section>
+          <section class="footer-block">
+            &copy; PLLUG, 2016
+          </section>
+        </section>
+      </footer>
     </section>
-    <footer></footer>
   </body>
 </html>
