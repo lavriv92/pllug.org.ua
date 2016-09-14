@@ -9,29 +9,46 @@
 
   <body>
     <section class="container">
-      <header>
-        <h1><a href="/">PLLUG</a></h1>
-
-        <nav>
-          <li><%= link_to 'Команда', 'team' %></li>
-          <li><%= link_to 'Роадмап', 'roadmap' %></li>
-          <li><%= link_to 'Блог', 'blog' %></li>
-          <li><%= link_to 'Контакти', 'contact' %></li>
-        </nav>
+      <header class="page-header">
+        <section class="page-header__header-bar">
+          <section class="page-container page-header__top-bar">
+            <div class="logo">
+              <%= image_tag("logo-img.png") %>
+              <%= image_tag("logo-title.png") %>
+            </div>
+            <div class="page-header__right">
+              <div class="">
+                <div class="search">
+                  <input type="text" placeholder="Search" name="name" value="">
+                </div>
+                <div class="">
+                  <span>en</span>
+                  <span>ua</span>
+                </div>
+              </div>
+              <nav class="page-header__nav nav">
+                <li class="page-header__nav-item">Команда</li>
+                <li class="page-header__nav-item">Путівник</li>
+                <li class="page-header__nav-item">Блог</li>
+                <li class="page-header__nav-item">Контакти</li>
+              </nav>
+            </div>
+          </section>
+        </section>
       </header>
-      <section class="content">
+      <section>
         <%= yield %>
       </section>
-      <footer>
-        <section class="footer-container">
-          <section class="footer-block">
-            <email>info@pllug.org.ua</email>
+      <footer class="page-footer">
+        <section class="footer-wrapper">
+          <section class="footer-item">
+            info@pllug.org.ua
           </section>
-          <section class="footer-block">
-            F
+          <section class="footer-item">
+            <%= image_tag('footer-facebook.png') %>
           </section>
-          <section class="footer-block">
-            &copy; PLLUG, 2016
+          <section class="footer-item">
+            &copy; 2013 PLLUG Community
           </section>
         </section>
       </footer>

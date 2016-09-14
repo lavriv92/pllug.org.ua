@@ -1,37 +1,49 @@
-<header class="page-header">
-  <span>Ми раді вітати вас на нашій сторінці</span>
-</header>
-<section class="home-page-container">
+<section class="home-page-container page-container">
   <section class="home-page-item">
-    <h3>Більше про PLLUG</h3>
+    <%= image_tag('more-about-pllug.png', class: "home-page-image") %>
+    <h4>Більше про PLLUG</h4>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
     </p>
   </section>
   <section class="home-page-item">
-    <h3>PLLUG програма</h3>
+    <%= image_tag('calendar.png', class: "home-page-image") %>
+    <h4>PLLUG програма</h4>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
     </p>
   </section>
   <section class="home-page-item">
-    <h3>Бути в курсі</h3>
+    <%= image_tag('home-subscribe.png', class: "home-page-image") %>
+    <h4>Бути в курсі</h4>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
     </p>
   </section>
   <section class="home-page-item">
-    <h3>PLLUG проекти</h3>
+    <%= image_tag('pl-projects.png', class: "home-page-image") %>
+    <h4>PLLUG проекти</h4>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
     </p>
   </section>
 </section>
-<section class="page-container">
-  <h3>Наші партнери</h3>
-  <section class="partners-container">
-    <section class="partner-item">
-
+<section class="partners-container">
+  <section class="page-container">
+    <h4 class="partners-title">Наші партнери</h4>
+    <section class="partners-container">
+      <section class="partner-item">
+        <%= image_tag('electronics.png') %>
+      </section>
+      <section class="partner-item">
+        <%= image_tag('lug.png') %>
+      </section>
+      <section class="partner-item">
+        <%= image_tag('vakoms.png') %>
+      </section>
+      <section class="partner-item">
+        <%= image_tag('indeema.png') %>
+      </section>
     </section>
   </section>
 </section>
